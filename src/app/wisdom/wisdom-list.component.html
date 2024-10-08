@@ -1,0 +1,9 @@
+<ActionBar title="Wisdom & Readings"></ActionBar>
+
+<ListView [items]="wisdomList" class="list-group">
+  <ng-template let-item="item">
+    <StackLayout class="list-group-item" (tap)="onItemTap(item)">
+      <Label [text]="item.title" class="h3"></Label>
+    </StackLayout>
+  </ng-template>
+</ListView>

@@ -1,0 +1,9 @@
+<ActionBar title="Daily Motivation"></ActionBar>
+
+<StackLayout class="p-4">
+  <Label text="Welcome to Your Daily Motivation!" class="h2 text-center"></Label>
+  <Label [text]="'Today\'s Quote: ' + dailyQuote" textWrap="true" class="h3 text-center m-t-20 m-b-10"></Label>
+  <Label [text]="'- ' + dailyAuthor" class="h4 text-right"></Label>
+  <Button text="Daily Quote" (tap)="navigateToDailyQuote()" class="btn btn-primary m-t-20"></Button>
+  <Button text="Wisdom & Readings" (tap)="navigateToWisdom()" class="btn btn-secondary m-t-10"></Button>
+</StackLayout>

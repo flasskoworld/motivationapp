@@ -1,0 +1,8 @@
+<ActionBar title="Daily Quote"></ActionBar>
+
+<StackLayout class="p-4">
+  <Label text="Your Daily Dose of Motivation" class="h2 text-center m-b-20"></Label>
+  <Label [text]="quote" textWrap="true" class="h3 text-center m-b-10"></Label>
+  <Label [text]="'- ' + author" class="h4 text-right"></Label>
+  <Button text="New Quote" (tap)="loadNewQuote()" class="btn btn-primary m-t-20"></Button>
+</StackLayout>
